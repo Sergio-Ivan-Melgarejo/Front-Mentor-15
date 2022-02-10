@@ -1,0 +1,122 @@
+.nav{
+    display: flex;
+    align-items: center;
+    padding: 2em 0 2em 2em;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.nav__container-logo img{
+    animation: logo 10s infinite linear;
+}
+
+@keyframes logo {
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+
+.nav__line{
+    height: 2px;
+    flex-grow: 1;
+    position: relative;
+    right: -40px;
+    opacity: .1;
+    background-color: var(--white);
+    z-index: 10;
+}
+
+.nav__ul{
+    list-style: none;
+    margin: 0;
+    padding: 0 5em;
+    overflow: hidden;
+    background-color: #ffffff10;
+    backdrop-filter: blur(20px);
+}
+
+.nav__a{
+    display: inline-block;
+    color: #fff;
+    padding: 2.2em 0em;
+    text-decoration: none;
+}
+
+.nav__a-subline{
+    background-color: var(--white);
+    height: 4px;
+    width: 0%;
+    transition: width .5s;
+}
+
+.nav__li:hover > .nav__a-subline{
+    width: 100%;
+}
+
+.select{
+    width: 100%;
+}
+
+.nav__container-nav-movil{
+    padding: 2.1em;
+    cursor: pointer;
+}
+
+.background-movil{
+    position: absolute;
+    transition: background-color .3s, width .3s, box-shadow .3s;
+}
+
+@media screen and (max-width: 750px) {
+    .nav__line{
+        display: none;
+    }
+    .nav__ul{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 30%;
+        top: 0;
+        transform: translateX(100%);
+        transition: transform .5s;
+    }
+    .open .nav__ul{
+        transform: translateX(0%);
+        z-index: 100;
+        padding: 10em 2em;
+    }
+    .open .nav__a{
+        padding: 0;
+    }
+    .open .nav__li{
+        padding: 1em 0;
+    }
+    .open .background-movil{
+        background-color: #00000050;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        box-shadow: 0 0 5em 10px #00000050 inset;
+    }
+    .open .nav__container-nav-movil{
+        z-index: 200;
+    }
+}
+
+@media screen and (min-width: 751px) {
+    .nav__container-nav-movil{
+        display: none;
+    }
+    .nav__nav-movil{
+        display: none;
+    }
+    .nav__ul{
+        display: flex;
+        gap: 3.2em;
+    }
+}
