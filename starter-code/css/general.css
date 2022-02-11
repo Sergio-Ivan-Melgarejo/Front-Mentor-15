@@ -1,3 +1,26 @@
 :root{
     --white: #fff;
 }
+
+.max-width{
+    max-width: 1660px;
+}
+
+/* Containers */
+
+.containers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+@media screen and (max-width: 785px) {}
+
+@media screen and (min-width: 786px) {
+    .containers{
+        justify-content: space-evenly;
+        gap: 2em;
+    }
+}

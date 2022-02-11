@@ -9,6 +9,9 @@
   <title>Frontend Mentor | Space tourism website</title>
 
   <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="./css/main.css">
 </head>
@@ -21,7 +24,7 @@
     </div>
     <div class="nav__line"></div>
     <div class="nav__container-nav-movil" id="navButton">
-      <img class="nav__nav-movil" src="../starter-code/assets/shared/icon-hamburger.svg" alt="button nav movil">
+      <img class="nav__nav-movil" src="../starter-code/assets/shared/icon-hamburger.svg" alt="button to open nav movil">
     </div>
     <ul class="nav__ul">
       <li class="nav__li"><a class="nav__a" href="index.html"><span>00</span> Home</a><div class="nav__a-subline select"></div></li>
@@ -31,18 +34,21 @@
     </ul>
     <div class="background-movil" id="background-movil"></div>
   </nav>
-<!--   
-  <header class="header">
+  
+  <header class="header max-width containers">
     <div class="header__div">
       <h1 class="header__h1">So, you want to travel to <span class="header__span">Space</span></h1>
       <p class="header__p">Let’s face it; if you want to go to space, you might as well genuinely go to 
       outer space and not hover kind of on the edge of it. Well sit back, and relax 
       because we’ll give you a truly out of this world experience!</p>
     </div>
-    <button class="header__button">Explore</button>
+    <div class="header__container-button">
+      <a href="./destination.html" class="header__button">Explore</a>
+      <div class="header__bg-button-1"></div>
+      <div class="header__bg-button-2"></div>
+    </div>
   </header>
-   -->
-
+  
   <script src="./js/main.js"></script>
 </body>
 </html>
