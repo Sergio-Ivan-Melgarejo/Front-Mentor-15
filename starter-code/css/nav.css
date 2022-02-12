@@ -40,7 +40,7 @@
 
 .nav__a{
     display: inline-block;
-    color: var(--white);
+    color: var(--gray);
     padding: 2.2em 0em;
     text-decoration: none;
     width: 100%;
@@ -49,8 +49,13 @@
     font-weight: 400;
 }
 
+.nav__a.select{
+    color: var(--white);
+}
+
 .nav__a span{
     font-weight: 600;
+    color: var(--white);
 }
 
 .nav__a-subline{

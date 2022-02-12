@@ -1,6 +1,7 @@
 :root{
     --white: #fff;
     --gray: rgb(210, 216, 249);
+    --gray: rgb(210, 216, 249);
     --font-family-1: 'Bellefair', serif;
     /*400*/
     --font-family-2: 'Barlow Condensed', sans-serif;
@@ -46,15 +47,15 @@
 
 .destination__box-1,
 .destination__box-2{
-    width: 40%;
     max-width: 600px;
-    min-width: 375px;
+    min-width: 350px;
     text-align: center;
 }
 
 .destination__box-1 img,
 .destination__box-2 img{
     width: 100%;
+    display: block;
 }
 
 @media screen and (max-width: 735px) {}
