@@ -40,9 +40,17 @@
 
 .nav__a{
     display: inline-block;
-    color: #fff;
+    color: var(--white);
     padding: 2.2em 0em;
     text-decoration: none;
+    width: 100%;
+    text-transform: uppercase;
+    font-family: var(--font-family-2);
+    font-weight: 400;
+}
+
+.nav__a span{
+    font-weight: 600;
 }
 
 .nav__a-subline{
@@ -56,10 +64,6 @@
     width: 100%;
 }
 
-.select{
-    width: 100%;
-}
-
 .nav__container-nav-movil{
     padding: .5em 2.1em;
     cursor: pointer;
@@ -70,7 +74,7 @@
     transition: background-color .3s, width .3s, box-shadow .3s;
 }
 
-@media screen and (max-width: 785px) {
+@media screen and (max-width: 735px) {
     .nav__line{
         display: none;
     }
@@ -111,7 +115,7 @@
     }
 }
 
-@media screen and (min-width: 786px) {
+@media screen and (min-width: 736px) {
     .nav__container-nav-movil{
         display: none;
     }

@@ -7,31 +7,74 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   
   <title>Frontend Mentor | Space tourism website</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/main.css">
 </head>
-<body>
+<body class="destination">
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+  <!-- nav -->
+  <nav class="nav" id="nav">
+    <div class="nav__container-logo">
+      <img class="nav__logo" src="./assets/shared/logo.svg" alt="logo">
+    </div>
+    <div class="nav__line"></div>
+    <div class="nav__container-nav-movil" id="navButton">
+      <img class="nav__nav-movil" src="../starter-code/assets/shared/icon-hamburger.svg" alt="button to open nav movil">
+    </div>
+    <ul class="nav__ul">
+      <li class="nav__li"><a class="nav__a" href="index.html"><span>00</span> Home</a><div class="nav__a-subline"></div></li>
+      <li class="nav__li"><a class="nav__a" href="destination.html"><span>01</span> Destination</a><div class="nav__a-subline select"></div></li>
+      <li class="nav__li"><a class="nav__a" href="crew.html"><span>02</span> Crew</a><div class="nav__a-subline"></div></li>
+      <li class="nav__li"><a class="nav__a" href="technology.html"><span>03</span> Technology</a><div class="nav__a-subline"></div></li>
+    </ul>
+    <div class="background-movil" id="background-movil"></div>
+  </nav>
 
-  01 Pick your destination
+  <main class="main max-width">
+    <h1 class="main__h1"><span class="main__span">01</span> Pick your destination</h1>
+    <div class="containers max-width">
+      <!-- box 1-->
+      <div class="destination__box-1">
+        <img src="./assets/destination/image-moon.webp" alt="image moon">
+      </div>
+      <!-- box 2-->  
+      <div class="destination__box-2">
+        <nav class="nav">
+          <ul class="ul">
+            <li class="li"><a class="nav__a select" href="index.html">Moon</a><div class="nav__a-subline select"></div></li>
+            <li class="li"><a class="nav__a" href="index.html">Mars</a><div class="nav__a-subline"></div></li>
+            <li class="li"><a class="nav__a" href="index.html">Europa</a><div class="nav__a-subline"></div></li>
+            <li class="li"><a class="nav__a" href="index.html">Titan</a><div class="nav__a-subline"></div></li>
+          </ul>
+        </nav>
+        <h2 class="h2">Moon</h2>
+        <div class="p">See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
+        regain perspective and come back refreshed. While you’re there, take in some history 
+        by visiting the Luna 2 and Apollo 11 landing sites.</div>
+        <hr class="hr">
+        <div class="flex">
+          <p class="item-1">
+            Avg. distance
+            <span class="span">384,400 km</span>
+          </p>
+          <p class="item-2">
+            Est. travel time
+            <span class="span">3 days</span>
+          </p>
+        </div>
+      </div>
 
-  Moon
-  Mars
-  Europa
-  Titan
+    </div>
+  </main>
 
-  Moon
-
-  See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
-  regain perspective and come back refreshed. While you’re there, take in some history 
-  by visiting the Luna 2 and Apollo 11 landing sites.
-
-  Avg. distance
-  384,400 km
-
-  Est. travel time
-  3 days
+  <script src="./js/main.js"></script>
 </body>
 </html>
