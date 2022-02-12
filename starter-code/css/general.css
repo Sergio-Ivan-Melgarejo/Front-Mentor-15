@@ -37,17 +37,21 @@
     text-transform: uppercase;
     word-spacing: 10px;
     font-weight: 400;
-    padding: 1em 0;
+    padding: 1em;
 }
 
 .main__span{
-    font-weight: 600;
+    font-family: var(--font-family-2);
+    font-weight: bolder;
     color: #666;
 }
 
 .destination__box-1,
 .destination__box-2{
-    max-width: 600px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    width: 100%;
+    max-width: 500px;
     min-width: 350px;
     text-align: center;
 }
@@ -68,5 +72,8 @@
     .destination__box-1,
     .destination__box-2{
         text-align: left;
+    }
+    .main__h1{
+        padding: 1em 0;
     }
 }

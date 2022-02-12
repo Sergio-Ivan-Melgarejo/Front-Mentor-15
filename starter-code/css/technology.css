@@ -1,0 +1,104 @@
+.technology{
+    box-sizing: border-box;
+}
+.technology .destination__box-2{
+    display: flex;
+    flex-direction: column;
+}
+.technology .main .nav{
+    padding: 1em 0;
+}
+.technology .ul{
+    width: 100%;
+    padding: 1em 0;
+    list-style: none;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+.technology button{
+    font-size: 1.5em;
+    padding: .5em .9em;
+    border: 2px solid #666;
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: bolder;
+    background-color: transparent;
+    color: #666;
+    transition: color .3s, border-color .3s;
+}
+.technology button:hover{
+    color: var(--white);
+    border-color: var(--white);
+}
+.technology button.select{
+    color: #666;
+    background-color: var(--white);
+}
+.technology .sub-title{
+    color: var(--gray);
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: var(--font-family-2);
+    font-size: clamp(1.2em,5vw,1.8em);
+}
+.technology .h2{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: clamp(2em,5vw,3.5em);
+    padding: 10px 0 30px;
+}
+.technology .p{
+    color: var(--gray);
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: var(--font-family-1);
+    font-size: 1em;
+    padding: 0 2em 5em;
+}
+.technology .container-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+@media screen and (max-width: 735px) {
+    .technology .destination__box-1{
+        width: 100%;
+        max-width: none;
+        height: 250px;
+        background: url(../assets/technology/image-launch-vehicle-portrait.jpg);
+        background-size: cover;
+        background-position: bottom;
+        background-attachment: fixed;
+    }
+    .technology .destination__box-1 img{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 736px) {
+    .technology .destination__box-1{
+        order: 2;
+    }
+    .technology .destination__box-2{
+        order: 1;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        max-width: 600px;
+    }
+    .technology .main .nav{
+        padding: 0 2em 0 0;
+    }
+    .technology .ul{
+        flex-direction: column;
+    }
+    .technology .p{
+        padding: 0 ;
+    }
+    .technology button{
+        font-size: 2em;
+        padding: .8em 1.1em;
+    }
+}

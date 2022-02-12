@@ -1,9 +1,5 @@
-.crew{
-    height: 150% !important;
-    background-color: black;
-}
-.destination__box-1 img,
-.destination__box-2 img{
+.crew .destination__box-1 img,
+.crew .destination__box-2 img{
     max-width: 420px;
     margin: 0 auto;
 }
@@ -37,7 +33,6 @@
 }
 .crew .nav{
     margin-top: 100px 0 0 ;
-    padding: 2em 0;
 }
 .crew .ul{
     padding: 0;
@@ -77,5 +72,8 @@
 @media screen and (min-width: 736px) {
     .crew .ul{
         justify-content: flex-start;
+    }
+    .crew .main .nav{
+        padding: 2em 0;
     }
 }

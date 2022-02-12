@@ -1,7 +1,6 @@
 .destination .main .nav{
     background-color: transparent;
     backdrop-filter: none;
-    padding: 0;
     justify-content: space-evenly;
     font-size: 1.5em;
 }
@@ -76,5 +75,8 @@
     }
     .destination .flex{
         justify-content: space-between;
+    }
+    .destination .main .nav{
+        padding: 1em 0;
     }
 }
