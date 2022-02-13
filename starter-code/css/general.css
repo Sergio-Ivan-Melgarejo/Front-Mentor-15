@@ -1,11 +1,29 @@
 :root{
     --white: #fff;
     --gray: rgb(210, 216, 249);
-    --gray: rgb(210, 216, 249);
     --font-family-1: 'Bellefair', serif;
     /*400*/
     --font-family-2: 'Barlow Condensed', sans-serif;
     /*400 600*/
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family-1);
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    width: 100vw;
+    min-width: 375px;
+    color: var(--white);
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    background-size: cover;
+    overflow-x: hidden;
 }
 
 .max-width{
@@ -63,9 +81,9 @@
     display: block;
 }
 
-@media screen and (max-width: 735px) {}
-
-@media screen and (min-width: 736px) {
+@media screen and (max-width: 566px) {}
+@media screen and (min-width: 567px) and (min-width: 835px){}
+@media screen and (min-width: 836px) {
     .containers{
         justify-content: space-evenly;
         gap: 2em;

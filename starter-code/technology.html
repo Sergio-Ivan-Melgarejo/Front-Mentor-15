@@ -1,72 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Space tourism website</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    
+    <title>Frontend Mentor | Space tourism website</title>
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600&display=swap" rel="stylesheet">
-  <!-- CSS -->
-  <link rel="stylesheet" href="./css/main.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body id="body"  class="technology" data-page="technology">
-  
+    
+    <!-- Loader -->
+    <div id="loader" class="bg-loader">
+        <div class="loader one"></div>
+        <div class="loader two"></div>
+        <div class="loader three"></div>
+    </div>
+    
     <!-- nav -->
     <nav class="nav" id="nav">
-      <div class="nav__container-logo">
-        <img class="nav__logo" src="./assets/shared/logo.svg" alt="logo">
-      </div>
-      <div class="nav__line"></div>
-      <div class="nav__container-nav-movil" id="navButton">
-        <img class="nav__nav-movil" src="../starter-code/assets/shared/icon-hamburger.svg" alt="button to open nav movil">
-      </div>
-      <ul class="nav__ul">
-        <li class="nav__li"><a class="nav__a" href="index.html"><span>00</span> Home</a><div class="nav__a-subline"></div></li>
-        <li class="nav__li"><a class="nav__a" href="destination.html"><span>01</span> Destination</a><div class="nav__a-subline"></div></li>
-        <li class="nav__li"><a class="nav__a" href="crew.html"><span>02</span> Crew</a><div class="nav__a-subline"></div></li>
-        <li class="nav__li"><a class="nav__a select" href="technology.html"><span>03</span> Technology</a><div class="nav__a-subline select"></div></li>
-      </ul>
-      <div class="background-movil" id="background-movil"></div>
+        <div class="nav__container-logo">
+          <img class="nav__logo" src="./assets/shared/logo.svg" alt="logo">
+        </div>
+        <div class="nav__line"></div>
+        <div class="nav__container-nav-movil" id="navButton">
+          <img class="nav__nav-movil" src="../starter-code/assets/shared/icon-hamburger.svg" alt="button to open nav movil">
+        </div>
+        <ul class="nav__ul">
+          <li class="nav__li"><a class="nav__a" href="index.html"><span>00</span> Home</a><div class="nav__a-subline"></div></li>
+          <li class="nav__li"><a class="nav__a" href="destination.html"><span>01</span> Destination</a><div class="nav__a-subline"></div></li>
+          <li class="nav__li"><a class="nav__a" href="crew.html"><span>02</span> Crew</a><div class="nav__a-subline"></div></li>
+          <li class="nav__li"><a class="nav__a select" href="technology.html"><span>03</span> Technology</a><div class="nav__a-subline select"></div></li>
+        </ul>
+        <div class="background-movil" id="background-movil"></div>
     </nav>
 
     <main class="main max-width">
-      <h1 class="main__h1"><span class="main__span">03</span> Space launch 101</h1>
-      
-      <div class="containers max-width">
-        <!-- box 1 -->
-        <div class="destination__box-1">
-          <img data-value="landscape" data-section="technology" class="img-movil" src="./assets/technology/image-launch-vehicle-landscape.jpg" alt="landscape">
-          <img data-value="portrait" data-section="technology" class="img-desktop" src="./assets/technology/image-launch-vehicle-portrait.jpg" alt="douglas hurley">
-          <div class="img-subline"></div>
-        </div>
-        <!-- box 2 -->  
-        <div class="destination__box-2">    
-          <nav class="nav">
-            <ul class="ul" id="events">
-              <li class="li"><button class="bnt select" arial-rol="button Launch vehicle" data-rol="button" data-number="0">1</button></li>
-              <li class="li"><button class="bnt" arial-rol="button Spaceport" data-rol="button" data-number="1">2</button></li>
-              <li class="li"><button class="bnt" arial-rol="button Space capsule" data-rol="button" data-number="2">3</button></li>
-            </ul>
-          </nav>
-          <div class="container-text">
-            <h3 class="sub-title">The terminology...</h3>
-            <h2 data-value="name" data-section="technology" class="h2">Launch vehicle</h2>
-            <p data-value="description" data-section="technology" class="p">A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a 
-              payload from Earth's surface to space, usually to Earth orbit or beyond. Our 
-              WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, 
-              it's quite an awe-inspiring sight on the launch pad!</p>
+        <h1 class="main__h1"><span class="main__span">03</span> Space launch 101</h1>
+        
+        <div class="containers max-width">
+          <!-- box 1 -->
+          <div class="destination__box-1">
+            <img data-value="landscape" data-section="technology" class="img-movil" src="./assets/technology/image-launch-vehicle-landscape.jpg" alt="landscape">
+            <img data-value="portrait" data-section="technology" class="img-desktop" src="./assets/technology/image-launch-vehicle-portrait.jpg" alt="douglas hurley">
+            <div class="img-subline"></div>
+          </div>
+          <!-- box 2 -->  
+          <div class="destination__box-2">    
+            <nav class="nav">
+              <ul class="ul" id="events">
+                <li class="li"><button class="bnt select" arial-rol="button Launch vehicle" data-rol="button" data-number="0">1</button></li>
+                <li class="li"><button class="bnt" arial-rol="button Spaceport" data-rol="button" data-number="1">2</button></li>
+                <li class="li"><button class="bnt" arial-rol="button Space capsule" data-rol="button" data-number="2">3</button></li>
+              </ul>
+            </nav>
+            <div class="container-text">
+              <h3 class="sub-title">The terminology...</h3>
+              <h2 data-value="name" data-section="technology" class="h2">Launch vehicle</h2>
+              <p data-value="description" data-section="technology" class="p">A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a 
+                payload from Earth's surface to space, usually to Earth orbit or beyond. Our 
+                WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, 
+                it's quite an awe-inspiring sight on the launch pad!</p>
+            </div>
           </div>
         </div>
-      </div>
     </main>
   
     <script src="./js/main.js"></script>

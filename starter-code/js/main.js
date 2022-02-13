@@ -7,6 +7,8 @@ const body = document.getElementById("body");
 const containerbutton = document.querySelectorAll("[data-rol]");
 let data = null;
 
+const loader = document.getElementById("loader");
+
 const getData = async () => {
     data =  await fetch("./data.json")
         .then(res => res.json())
@@ -73,5 +75,7 @@ addEventListener("DOMContentLoaded",()=>{
             })
             break
     }
+
+    loader.classList.add("close");
 })
 
