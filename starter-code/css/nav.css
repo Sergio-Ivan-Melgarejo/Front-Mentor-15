@@ -58,6 +58,10 @@
     color: var(--white);
 }
 
+.nav__li:hover > .nav__a{
+    color: var(--white);
+}
+
 .nav__a-subline{
     background-color: var(--white);
     height: 4px;

@@ -18,7 +18,7 @@
   <!-- CSS -->
   <link rel="stylesheet" href="./css/main.css">
 </head>
-<body class="destination">
+<body id="body" class="destination" data-page="destination">  <!-- data-value="description"  data-section="profile"-->
 
   <!-- nav -->
   <nav class="nav" id="nav">
@@ -43,31 +43,31 @@
     <div class="containers max-width">
       <!-- box 1-->
       <div class="destination__box-1">
-        <img id="img" src="./assets/destination/image-moon.webp" alt="image moon">
+        <img data-value="images" data-section="destinations" src="./assets/destination/image-moon.webp" alt="image moon">
       </div>
       <!-- box 2-->  
       <div class="destination__box-2">
         <nav class="nav">
-          <ul class="ul">
-            <li class="li"><a class="nav__a select" href="#!">Moon</a><div class="nav__a-subline select"></div></li>
-            <li class="li"><a class="nav__a" href="#!">Mars</a><div class="nav__a-subline"></div></li>
-            <li class="li"><a class="nav__a" href="#!">Europa</a><div class="nav__a-subline"></div></li>
-            <li class="li"><a class="nav__a" href="#!">Titan</a><div class="nav__a-subline"></div></li>
+          <ul class="ul" id="events">
+            <li class="li"><button class="nav__a select" arial-rol="button moon" data-rol="button" data-number="0">Moon</button><div class="nav__a-subline select"></div></li>
+            <li class="li"><button class="nav__a" arial-rol="button mars" data-rol="button" data-number="1">Mars</button><div class="nav__a-subline"></div></li>
+            <li class="li"><button class="nav__a" arial-rol="button europa" data-rol="button" data-number="2">Europa</button><div class="nav__a-subline"></div></li>
+            <li class="li"><button class="nav__a" arial-rol="button titan" data-rol="button" data-number="3">Titan</button><div class="nav__a-subline"></div></li>
           </ul>
         </nav>
-        <h2 id="name" class="h2">Moon</h2>
-        <p id="description" class="p">See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
+        <h2 data-value="name" data-section="destinations" class="h2">Moon</h2>
+        <p data-value="description" data-section="destinations" class="p">See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
         regain perspective and come back refreshed. While you’re there, take in some history 
         by visiting the Luna 2 and Apollo 11 landing sites.</p>
         <hr class="hr">
         <div class="flex">
           <p class="item-1">
             Avg. distance
-            <span id="distance" class="span">384,400 km</span>
+            <span data-value="distance" data-section="destinations" class="span">384,400 km</span>
           </p>
           <p class="item-2">
             Est. travel time
-            <span id="travel" class="span">3 days</span>
+            <span data-value="travel" data-section="destinations" class="span">3 days</span>
           </p>
         </div>
       </div>

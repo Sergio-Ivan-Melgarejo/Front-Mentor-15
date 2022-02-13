@@ -18,7 +18,7 @@
   <!-- CSS -->
   <link rel="stylesheet" href="./css/main.css">
 </head>
-<body class="crew">
+<body id="body" class="crew" data-page="crew">
 
   <!-- nav -->
   <nav class="nav" id="nav">
@@ -44,29 +44,28 @@
     <div class="containers max-width">
       <!-- box 1 -->  
       <div class="destination__box-1">
-        <h3 class="role" id="role">Commander</h3>
-        <h2 id="name" class="h2">Douglas Hurley</h2>
-        <p id="bio" class="p">Douglas Gerald Hurley is an American engineer, former Marine Corps pilot 
+        <h3 data-value="role" data-section="crew" class="role" id="role">Commander</h3>
+        <h2 id="name" class="h2" data-value="name" data-section="crew">Douglas Hurley</h2>
+        <p data-value="bio" data-section="crew" id="bio" class="p">Douglas Gerald Hurley is an American engineer, former Marine Corps pilot 
           and former NASA astronaut. He launched into space for the third time as 
           commander of Crew Dragon Demo-2.</p>
         <nav class="nav">
-          <ul class="ul">
-            <li class="li"><button class="bnt select" id="btn-1"></button></li>
-            <li class="li"><button class="bnt" id="btn-2"></button></li>
-            <li class="li"><button class="bnt" id="btn-3"></button></li>
-            <li class="li"><button class="bnt" id="btn-4"></button></li>
+          <ul class="ul" id="events">
+            <li class="li"><button class="bnt select" arial-rol="button Commander" data-rol="button" data-number="0"></button></li>
+            <li class="li"><button class="bnt" arial-rol="button Mission Specialist" data-rol="button" data-number="1"></button></li>
+            <li class="li"><button class="bnt" arial-rol="button Pilot" data-rol="button" data-number="2"></button></li>
+            <li class="li"><button class="bnt" arial-rol="button Flight Engineer" data-rol="button" data-number="3"></button></li>
           </ul>
         </nav>
       </div>
       <!-- box 2 -->
       <div class="destination__box-2">
-        <img id="img" src="./assets/crew/image-douglas-hurley.webp" alt="douglas hurley">
+        <img data-value="images" data-section="crew"  id="img" src="./assets/crew/image-douglas-hurley.webp" alt="douglas hurley">
         <div class="img-subline"></div>
       </div>
     </div>
 
   </main>
-
 
   <script src="./js/main.js"></script>
 </body>

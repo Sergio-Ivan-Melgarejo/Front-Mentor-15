@@ -25,6 +25,7 @@
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
+    height: 90%;
 }
 
 .main{
@@ -37,7 +38,7 @@
     text-transform: uppercase;
     word-spacing: 10px;
     font-weight: 400;
-    padding: 1em;
+    padding: 0 0 1em;
 }
 
 .main__span{
@@ -72,8 +73,5 @@
     .destination__box-1,
     .destination__box-2{
         text-align: left;
-    }
-    .main__h1{
-        padding: 1em 0;
     }
 }

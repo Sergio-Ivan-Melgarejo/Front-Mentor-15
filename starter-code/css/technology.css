@@ -67,17 +67,27 @@
         width: 100%;
         max-width: none;
         height: 250px;
-        background: url(../assets/technology/image-launch-vehicle-portrait.jpg);
-        background-size: cover;
-        background-position: bottom;
-        background-attachment: fixed;
+        align-self: flex-start;
     }
-    .technology .destination__box-1 img{
+    .technology .destination__box-1 .img-movil{
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    .technology .destination__box-1 .img-desktop{
         display: none;
     }
 }
 
 @media screen and (min-width: 736px) {
+    .technology .destination__box-1 .img-movil{
+        display: none;
+    } 
+    .technology .destination__box-1 .img-desktop{
+        display: block;
+    }
     .technology .destination__box-1{
         order: 2;
     }
@@ -100,5 +110,5 @@
     .technology button{
         font-size: 2em;
         padding: .8em 1.1em;
-    }
+    }   
 }
