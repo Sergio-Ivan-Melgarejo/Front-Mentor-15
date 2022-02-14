@@ -154,6 +154,9 @@
 }
 
 @media screen and (min-width: 836px) {
+    .nav{
+        padding: 2em;
+    }
     .nav__container-nav-movil{
         display: none;
     }
@@ -162,8 +165,14 @@
     }
     .nav__ul{
         display: flex;
-        gap: 3.2em;
-        padding: 0 6em;
+        gap: 3em;
+        padding: 0 10%;
         transition: padding .3s, font-size .3s;
+        transform: translate(2em);
+    }
+    .nav__a{
+        letter-spacing: 3px;
+        font-size: clamp(1em,1vw,1.2em);
+        padding: 2.2em 0;
     }
 }

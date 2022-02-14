@@ -84,4 +84,7 @@
     .destination .flex{
         justify-content: space-between;
     }
+    .destination .destination__box-2{
+        max-width: 450px;
+    }
 }

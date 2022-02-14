@@ -1,8 +1,4 @@
-.crew .destination__box-1 img,
-.crew .destination__box-2 img{
-    max-width: 420px;
-    margin: 0 auto;
-}
+
 .crew .containers{
     height: 90%;
 }
@@ -59,10 +55,8 @@
 .crew .bnt.select{
     background-color: var(--white);
 }
-.crew .img-subline{
-    height: 2px;
-    background-color: #666;
-    opacity: .2;
+.crew .destination__box-2{
+    border-bottom: 2px solid rgba(102, 102, 102, 0.336);
 }
 
 @media screen and (min-width: 836px) {
@@ -71,5 +65,8 @@
     }
     .crew .main .nav{
         padding: 2em 0;
+    }
+    .crew .destination__box-1{
+        max-width: 620px;
     }
 }
