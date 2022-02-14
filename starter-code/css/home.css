@@ -16,20 +16,20 @@
 
 .header__h1{
     text-transform: uppercase;
-    font-size: clamp(1em,5vw,2em);
+    font-size: clamp(1em,3vw,2em);
     font-weight: 400;
     color: var(--gray);
 }
 
 .header__span{
     color: var(--white);
-    font-size: clamp(3em,20vw,5.8em);
+    font-size: clamp(3em,15vw,5.8em);
     display: block;
     padding: 15px 0;
 }
 
 .header__p{
-    font-size: clamp(1em,5vw,1.6em);
+    font-size: clamp(1em,3vw,1.6em);
     color: var(--gray);
     line-height: 1.5em;
 }

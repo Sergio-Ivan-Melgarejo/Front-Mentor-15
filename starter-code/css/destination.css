@@ -87,4 +87,7 @@
     .destination .destination__box-2{
         max-width: 450px;
     }
+    .destination .destination__box-1 img{
+       height: auto;
+    }
 }

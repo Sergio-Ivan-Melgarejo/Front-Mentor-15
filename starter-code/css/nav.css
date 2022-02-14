@@ -6,7 +6,7 @@
 }
 
 .nav__container-logo{
-    padding: 0;
+    padding: 1em 0;
 }
 
 .nav__container-logo img{
@@ -123,8 +123,8 @@
     .open .nav__container-nav-movil{
         z-index: 200;
         position: fixed;
-        right: 0;
-        top: 2.4em;
+        right: 0em;
+        top:1em;
     }
 }
 
