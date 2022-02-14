@@ -40,7 +40,7 @@
 }
 
 .destination .h2{
-    font-size: clamp(5em,10vw,10em);
+    font-size: clamp(5em,10vw,8em);
     font-family: var(--font-family-1);
     font-weight: 400;
     text-transform: uppercase;
@@ -71,9 +71,13 @@
     display: block;
 }
 
-@media screen and (max-width: 735px) {}
+@media screen and (min-width: 567px) and (max-width: 835px){
+    .destination .containers{
+        justify-content: space-evenly;
+    }
+}
 
-@media screen and (min-width: 736px) {
+@media screen and (min-width: 836px) {
     .destination .main .nav{
         justify-content: flex-start;
     }

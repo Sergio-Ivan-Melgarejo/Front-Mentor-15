@@ -22,6 +22,12 @@ const validate = async event =>{
         containerbutton.forEach(ele => ele.classList.remove("select"));
         event.classList.add("select");
 
+        if(event.dataset.contentsl == "true"){
+            const sublines = document.querySelectorAll("[data-subline]");
+            sublines.forEach(ele => ele.classList.remove("select"));
+            event.parentNode.children[1].classList.add("select")
+        }
+
         if(!data) await getData();
         changedData(event.dataset.number); 
     } 
@@ -34,7 +40,10 @@ const changedData = (number) => {
         const section = item.dataset.section;
         const value = item.dataset.value;
 
-        if(value == "images" || value == "landscape" || value == "portrait") item.src = data[section][number][value];
+        if(value == "images" || value == "landscape" || value == "portrait"){ 
+            item.src = data[section][number][value];
+            item.alt = `image of ${data[section][number].name}`;
+        }
         else item.textContent = data[section][number][value];
     }
 }

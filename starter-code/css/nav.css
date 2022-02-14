@@ -1,12 +1,12 @@
 .nav{
     display: flex;
     align-items: center;
-    padding: 0 0 2em 2em;
+    padding:1em;
     justify-content: space-between;
 }
 
 .nav__container-logo{
-    padding: 2em 0;
+    padding: 0;
 }
 
 .nav__container-logo img{
@@ -78,7 +78,7 @@
 }
 
 .nav__container-nav-movil{
-    padding: .5em 2.1em;
+    padding: 1.5em;
     cursor: pointer;
 }
 
@@ -129,6 +129,12 @@
 }
 
 @media screen and (min-width: 567px) and (max-width: 835px){
+    .nav{
+        padding: 0 1em;
+    }
+    .nav__line{
+        display: none;
+    }
     .nav__container-nav-movil{
         display: none;
     }
@@ -138,11 +144,12 @@
     .nav__ul{
         display: flex;
         gap: 2em;
-        padding: 0 32px;
+        padding: 0 60px;
         font-size: .9em;
-    } 
-    .nav__line{
-        right: -20px;
+        transform: translate(20px);
+    }
+    .nav__a{
+        padding: 2.8em 0em;
     }
 }
 

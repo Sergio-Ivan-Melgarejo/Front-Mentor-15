@@ -31,8 +31,9 @@
     max-width: 500px;
     width: 100%;
 }
-.crew .nav{
+.crew .main .nav{
     margin-top: 100px 0 0 ;
+    padding: 1em 0;
 }
 .crew .ul{
     padding: 0;
@@ -43,7 +44,6 @@
     width: 100%;
     justify-content: center;
 }
-.crew .li{}
 .crew .bnt{
     display: block;
     padding: 10px;
@@ -65,11 +65,7 @@
     opacity: .2;
 }
 
-@media screen and (max-width: 735px) {
-
-}
-
-@media screen and (min-width: 736px) {
+@media screen and (min-width: 836px) {
     .crew .ul{
         justify-content: flex-start;
     }

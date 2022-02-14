@@ -70,7 +70,7 @@ body{
     flex-grow: 1;
     flex-shrink: 1;
     width: 100%;
-    max-width: 500px;
+    max-width: 450px;
     min-width: 350px;
     text-align: center;
 }
@@ -81,8 +81,13 @@ body{
     display: block;
 }
 
-@media screen and (max-width: 566px) {}
-@media screen and (min-width: 567px) and (min-width: 835px){}
+@media screen and (min-width: 567px) and (max-width: 835px){
+    .destination__box-1,
+    .destination__box-2{
+        max-width: 300px;
+    }
+}
+
 @media screen and (min-width: 836px) {
     .containers{
         justify-content: space-evenly;
